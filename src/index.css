@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap");
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  height: 10%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logo {
+  font-family: "DM Serif Display", serif;
+  color: white;
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+  padding: 0;
+  margin: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50vh;
+  animation: fadeUp 2.4s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.explore {
+  padding: 1rem 2rem;
+  border: none;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  color: #3535cc;
+  border-radius: 32px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 320px;
+  z-index: 1;
+  overflow: hidden;
+  transition: ease-in-out 0.4s;
+  animation: fadeIn 2.4s ease-in-out 2s forwards;
+  opacity: 0;
+  position: relative;
+}
+
+.explore:hover {
+  color: white;
+}
+
+.explore:hover::before {
+  width: 200%;
+  height: 300%;
+  border-radius: 100%;
+}
+
+.explore::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #3535cc;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-50%) translateY(50%);
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
