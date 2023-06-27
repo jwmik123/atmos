@@ -10,7 +10,7 @@ export const Overlay = () => {
       {clicked && (
         <div className="overlay">
           <div className="intro">
-            <h1 className="logo">JALLATMOS</h1>
+            <h1 className="logo">REMADE ATMOS</h1>
             <div className="spinner">
               <div className="spinner__image"></div>
             </div>

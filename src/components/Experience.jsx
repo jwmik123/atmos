@@ -75,7 +75,19 @@ export const Experience = () => {
         ),
         title: "WebGL",
         subtitle:
-          "Dit is een demo om te laten zien hoe je een 3D website kan maken.",
+          "Door het gebruik van ThreeJS en WebGL is het mogelijk om 3D objecten te renderen in de browser.",
+      },
+
+      {
+        cameraRailDist: 1.2,
+        position: new THREE.Vector3(
+          curvePoints[3].x - 2,
+          curvePoints[3].y,
+          curvePoints[3].z
+        ),
+        title: "Story telling",
+        subtitle:
+          "Op een interactieve manier een verhaal vertellen is een krachtige manier om een boodschap over te brengen.",
       },
     ];
   });
