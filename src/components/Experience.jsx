@@ -63,8 +63,8 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z + 10
         ),
-        title: "Papieren Vliegtuigje",
-        subtitle: "Dit is een demo website.",
+        title: "ReMaDe presents",
+        subtitle: "papieren vliegtuig demo website.",
       },
       {
         cameraRailDist: 1.5,
